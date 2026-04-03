@@ -5,21 +5,51 @@
     <title>Kasih Paramitha School - Artikel</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <!-- Icon -->
+    <!-- Favicon -->
+    <link href="../img/favicon.ico" rel="icon" />
+
+    <!-- Icon Font Stylesheet -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
 
-    <!-- CSS -->
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="../lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
     <link href="../css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet" />
+
+    <!-- Custom Fonts Stylesheet - IMPORTANT: Load this AFTER style.css -->
     <link href="../css/fonts.css" rel="stylesheet" />
 
     <style>
+      .login-btn {
+        background: #9a7b55;
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .login-btn:hover {
+        color: #fff;
+        background: #7f6546;
+      }
+      
       .artikel-page-section {
         padding: 50px 0 80px;
-        background: #f7f7f7;
+        background: #ffffff;
       }
 
       .artikel-list-wrapper {
@@ -201,6 +231,21 @@
           font-size: 0.88rem;
         }
       }
+      
+      .notif-link,
+      .notif-link i,
+      .notif-link::after {
+        color: #9a7b55 !important;
+      }
+
+      .notif-link:hover,
+      .notif-link:hover i,
+      .notif-link:hover::after,
+      .notif-link:focus,
+      .notif-link:focus i,
+      .notif-link:focus::after {
+        color: #5b9bd5 !important;
+      }
     </style>
   </head>
 
@@ -223,6 +268,20 @@
           </div>
         </a>
 
+        <div class="nav-item dropdown">
+          <a
+            href="#"
+            class="nav-link dropdown-toggle notif-link"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-bell"></i>
+          </a>
+          <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+            <a href="../artikel.html" class="dropdown-item">Pengumuman</a>
+          </div>
+        </div>
+
         <button
           type="button"
           class="navbar-toggler"
@@ -237,11 +296,31 @@
             <a href="indexAdmin.html" class="nav-item nav-link">Home</a>
             <a href="../about.html" class="nav-item nav-link">About Us</a>
             <a href="../classes.html" class="nav-item nav-link">Gallery</a>
-            <a href="../facility.html" class="nav-item nav-link">Program</a>
+            <div class="nav-item dropdown">
+              <a
+                href="facility.html"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Program</a
+              >
+              <div
+                class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
+              >
+                <a href="facility.html#school-section" class="dropdown-item"
+                  >School</a
+                >
+                <a
+                  href="facility.html#afterschool-section"
+                  class="dropdown-item"
+                  >After-School Programme</a
+                >
+              </div>
+            </div>  
             <a href="../contact.html" class="nav-item nav-link">Contact Us</a>
             <a href="../kalenderakademik.html" class="nav-item nav-link">Academic Calendar</a>
             <a href="../testimonial.html" class="nav-item nav-link">Testimonies</a>
           </div>
+          <a href="login/login.html" class="login-btn">Login</a>
         </div>
       </nav>
 

@@ -5,11 +5,48 @@
     <title>Kasih Paramitha School - Artikel</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon" />
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
+
+    <!-- Custom Fonts Stylesheet - IMPORTANT: Load this AFTER style.css -->
     <link href="css/fonts.css" rel="stylesheet" />
 
     <style>
+      .login-btn {
+        background: #9a7b55;
+        color: #fff;
+        text-decoration: none;
+        padding: 6px 14px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+      }
+
+      .login-btn:hover {
+        color: #fff;
+        background: #7f6546;
+      }
+      
       .artikel-page-section {
         padding: 60px 0 80px;
       }
@@ -136,6 +173,21 @@
           font-size: 0.88rem;
         }
       }
+      
+      .notif-link,
+      .notif-link i,
+      .notif-link::after {
+        color: #9a7b55 !important;
+      }
+
+      .notif-link:hover,
+      .notif-link:hover i,
+      .notif-link:hover::after,
+      .notif-link:focus,
+      .notif-link:focus i,
+      .notif-link:focus::after {
+        color: #5b9bd5 !important;
+      }
     </style>
   </head>
 
@@ -158,6 +210,20 @@
           </div>
         </a>
 
+        <div class="nav-item dropdown">
+          <a
+            href="#"
+            class="nav-link dropdown-toggle notif-link"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <i class="bi bi-bell"></i>
+          </a>
+          <div class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0">
+            <a href="artikel.html" class="dropdown-item">Pengumuman</a>
+          </div>
+        </div>
+
         <button
           type="button"
           class="navbar-toggler"
@@ -172,10 +238,31 @@
             <a href="index.html" class="nav-item nav-link">Home</a>
             <a href="about.html" class="nav-item nav-link">About Us</a>
             <a href="classes.html" class="nav-item nav-link">Gallery</a>
+            <div class="nav-item dropdown">
+              <a
+                href="facility.html"
+                class="nav-link dropdown-toggle"
+                data-bs-toggle="dropdown"
+                >Program</a
+              >
+              <div
+                class="dropdown-menu rounded-0 rounded-bottom border-0 shadow-sm m-0"
+              >
+                <a href="facility.html#school-section" class="dropdown-item"
+                  >School</a
+                >
+                <a
+                  href="facility.html#afterschool-section"
+                  class="dropdown-item"
+                  >After-School Programme</a
+                >
+              </div>
+            </div>
             <a href="contact.html" class="nav-item nav-link">Contact Us</a>
             <a href="kalenderakademik.html" class="nav-item nav-link">Academic Calendar</a>
             <a href="testimonial.html" class="nav-item nav-link">Testimonies</a>
           </div>
+          <a href="login/login.html" class="login-btn">Login</a>
         </div>
       </nav>
       <!-- Navbar End -->
@@ -199,56 +286,56 @@
           description:
             "Helping kids learn colors, textures, and worlds of wonder through the laughter and bright imagination of our young artists.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=1"
+          link: "artikel_form.html?id=1"
         },
         {
           title: "Art Exploration Day",
           description:
             "Children explore creativity through guided painting activities and fun collaborative projects.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=2"
+          link: "artikel_form.html?id=2"
         },
         {
           title: "Creative Canvas Session",
           description:
             "A joyful event where students express ideas and emotions through colors, shapes, and imagination.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=3"
+          link: "artikel_form.html?id=3"
         },
         {
           title: "Little Artist Workshop",
           description:
             "Encouraging confidence, focus, and creativity through hands-on artistic activities.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=4"
+          link: "artikel_form.html?id=4"
         },
         {
           title: "Fun With Colors",
           description:
             "Students learn basic color theory and composition in a playful classroom atmosphere.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=5"
+          link: "artikel_form.html?id=5"
         },
         {
           title: "Young Painter Showcase",
           description:
             "A class event featuring the children's artwork and their unique visual storytelling.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=6"
+          link: "artikel_form.html?id=6"
         },
         {
           title: "School Art Celebration",
           description:
             "Celebrating creativity and collaboration through school-wide art appreciation activities.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=7"
+          link: "artikel_form.html?id=7"
         },
         {
           title: "Outdoor Sketch Activity",
           description:
             "Students observe the environment and turn their ideas into beautiful sketches and paintings.",
           image: "img/artikel.jpg",
-          link: "article-detail.html?id=8"
+          link: "artikel_form.html?id=8"
         }
       ];
 
